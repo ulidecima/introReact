@@ -7,7 +7,7 @@ import Arg from './Arg'
 import ContadorApp from './ContadorApp'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState()
 
   return (
     <div className="App">
