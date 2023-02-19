@@ -5,6 +5,6 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ContadorApp value={123} />
+    <ContadorApp value={28} />
   </React.StrictMode>,
 )

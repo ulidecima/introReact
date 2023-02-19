@@ -13,6 +13,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  text-shadow: 0px 0px 3px rgb(250, 255, 184, 0.5);
 }
 
 a {
@@ -28,6 +30,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -38,18 +41,21 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:50px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#272727;
+	font-weight:bold;
+  padding: 10px 50px 10px 50px;
+  margin: 5px;
 }
 button:hover {
-  border-color: #646cff;
+  background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
 }
 button:focus,
 button:focus-visible {
@@ -67,4 +73,33 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto;
+
+background-color: rgb(65, 105, 225);
+  padding: 4rem;
+  border-radius: 50px;
+  box-shadow: 0px 0px 40px 1px rgba(65, 105, 225, 0.7);
+}
+
+.container-botones {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.container-reestablecer {
+  display: grid;
+}
+
+.container-mostrar-valor {
+  display: grid;
+  justify-content: center;
+}
+
+.container-counterApp {
+  display: grid;
 }
