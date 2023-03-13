@@ -1,11 +1,10 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import './App.css'
-import './Arg'
 import Arg from './Arg'
+import ContadorApp from './ContadorApp'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState()
 
   return (
     <div className="App">
@@ -19,6 +18,7 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <Arg />
+      <ContadorApp />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
